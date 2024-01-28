@@ -1,0 +1,304 @@
+---
+title: "Sampling Based MPC for Motion Planning of Autonomous Vehicles"
+authors:
+    - name: "John Doe"
+      url: "https://andreumatoses.github.io/"
+      superscript: "*1"
+    - name: "Luzia Knödler"
+      url: "https://andreumatoses.github.io/"
+      superscript: "1"
+    - name: "Ludwig van Beethoven"
+      url: "https://andreumatoses.github.io/"
+      superscript: "†"
+affiliations:
+    - name: "Equal contribution"
+      superscript: "*"
+    - name: "TU Delft"
+      superscript: "1"
+      url: "https://tudelft.nl"
+    - name: "Wien Opera House"
+      superscript: "†"
+end_date: 2022-01-01 # end date if ended, approximated if not sure. Just for display purposes and ordering.
+# This is the short project description, displayed in the project's card"
+description: "This project explores the use of Model Predictive Path Integral (MPPI) control algorithm to enable autonomous robots to navigate complex environments. MPPI is a sampling-based control method that combines path planning and control into a single optimization problem. By iteratively sampling and optimizing trajectories, the algorithm generates control inputs that minimize a cost function while satisfying system dynamics and constraints. The project aims to implement and evaluate the performance of MPPI on a robot platform, showcasing its effectiveness in real-world scenarios."
+cover_image: /assets/images/msc_projects/msc_project_template/jackal.jpg # Image displayed in the project's card, make it aspect ratio 1x1 (square) for best results, and keep it a reasonable size (like 1-2MB). Can also be a gif
+links: # If you have other website for the project, github repos, datasets, etc. put it here. You can also add an icon from https://icons.getbootstrap.com/
+    - name: Paper
+      icon: bi-file-earmark-pdf
+      url: "/"
+    - name: arXiv
+      url: "/"
+    - name: Code
+      icon: bi-github
+      url: "/"
+    - name: Video
+      icon: bi-youtube
+      url: "/"
+---
+
+<!-- THESE IS THE HEAD, WHERE ALL THE BASIC CSS , JS etc, IS LOADED-->
+<!-- ONLY HERE SO YOU CAN RENDER IT LOCALLY -->
+<!-- ONCE DONE, DELETE FROM HERE TO THE NEXT DELETE COMMENT !!!! -->
+
+
+<!DOCTYPE html>
+<html lang="en-us" class="h-100">
+
+<head>
+  <title>
+    Just some title
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Stylesheets for Bootstrap 5 and font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- for mathjax support -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']]
+      }
+    };        
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <div class="container-xl">
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <div class="body mt-3">
+          <div class="paper-body mt-5 px-0 px-lg-5">
+
+
+            <!-- DELETE UNTIL HERE.  -->
+            <!-- YOU NEED TO ALSO DELETE THE CLOSING OF THE BODY, BOTTOM OF THE DOCUMENT-->
+
+
+
+
+
+            <p>
+              All the content in the front matter will be rendered automatically. 
+              In this local version, it just shows the content of the front matter as text so ignore it,
+              just make sure you fill the front matter with all the info correctly.
+              You can see an example <a href="https://andreumatoses.github.io/amr-website-new/msc_projects_finished/msc-project-template">here</a>
+            </p>
+
+
+            <div class="teaser-video d-flex justify-content-center mb-3">
+              <div class="ratio ratio-16x9">
+                <video id="teaser" autoplay="" muted="" controls="" loop="" playsinline="">
+                  <source
+                    src="/assets/images/msc_projects/YY_my-title/sample_video.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <section id="abstract">
+              <h2>Summary of the Work</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur libero omnis dolore
+                voluptatem.
+                Sequi nesciunt veniam, ea laboriosam quas corporis quae nobis esse
+                doloremque in aperiam excepturi dignissimos quis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Sequi
+                repudiandae vero aliquid molestias at consequatur tempore autem
+                ullam illo provident?
+              </p>
+
+              <div class="single-image d-flex justify-content-center mb-3">
+                <img src="https://www.migmawei.ca/system/wp-content/uploads/2017/04/Placeholder_16_9-1.png" class="img-fluid" width="600" alt="lab">
+              </div>
+
+              <p>This is just a place holder for an image, centered and of width of 600px. If the screen becomes smaller, it resizes automatically</p>
+
+              <div class="youtube-video d-flex justify-content-center mb-3">
+                  <iframe width="600" height="350" src="https://www.youtube.com/embed/jaJBrSecDcM?si=C4sacP5KqmFNzvcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <!-- <iframe src="https://www.youtube.com/embed/?listType=playlist&list=PLOksz-MTFhN2T4gYQlLHR2lGCdC0BDkJw&" allowfullscreen></iframe> -->
+              </div>
+              <p>
+                You can embed youtube videos like this. Just copy the embed code from youtube (press share on a video then embed) and paste it here.
+              </p>
+
+            </section>
+
+            <section id="showcase-1">
+              <h2>Showcase 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur libero omnis dolore
+                voluptatem.
+                Sequi nesciunt veniam, ea laboriosam quas corporis quae nobis esse
+                doloremque in aperiam excepturi dignissimos quis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Sequi
+                repudiandae vero aliquid molestias at consequatur tempore autem
+                ullam illo provident?
+              </p>
+              <!-- This basically puts images in a grid of X columns. row-cols-md-X, where X means how many columns. md means until the screen is smaller than medium (ipad). Change X for 2,3,4,6,8,12 -->
+              <div class="image-grid text-center mb-2">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/hackathon-team.jpg"
+                      alt="Image 1">
+                  </div>
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/lab-hackathon.jpg"
+                      alt="Image 2">
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Some code that explains something important. Use the highlight tag to highlight code. You can use
+                <code>inline code</code>. NOTE: code blocks will not render correctly in the local template.
+              </p>
+
+              <div class="code-block">
+                {% highlight python linenos %}
+
+                import torch
+                import torch.nn as nn
+
+                class VAE(nn.Module):
+                def __init__(self, input_dim, hidden_dim, latent_dim):
+                super(VAE, self).__init__()
+
+                self.encoder = nn.Sequential(
+                nn.Linear(input_dim, hidden_dim),
+                nn.ReLU(),
+                nn.Linear(hidden_dim, latent_dim * 2) # Output mean and log variance
+                )
+
+                return reconstructed_x, mu, log_var
+                {% endhighlight %}
+              </div>
+
+              <p>
+                Some cool math equations here. You can just use math like in latex e.g $x^2$ or $\alpha =
+                \int_{\beta}^\gamma 1 \;
+                dt$. For inline, use <code>$ ... $</code>, for
+                block, use <code>\[ ... \]</code>.
+              </p>
+
+              <div class="math-block">
+                $$\begin{aligned}
+                \dot{x} &= \sigma(y-x) \\
+                \dot{y} &= \rho x - y - xz \\
+                \dot{z} &= -\beta z + xy
+                \end{aligned}$$
+              </div>
+
+            </section>
+
+
+            <section id="showcase-2">
+              <h2>Showcase 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur libero omnis dolore
+                voluptatem.
+                Sequi nesciunt veniam, ea laboriosam quas corporis quae nobis esse
+                doloremque in aperiam excepturi dignissimos quis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Sequi
+                repudiandae vero aliquid molestias at consequatur tempore autem
+                ullam illo provident?
+              </p>
+
+              <!-- This basically puts images in a grid. row-cols-md-X, where X means how many columns. md means until the screen is smaller than medium (ipad). Change X for 2,3,4,6,8,12 -->
+              <div class="image-grid text-center mb-2">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2">
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/hackathon-team.jpg"
+                      alt="Image 1">
+                  </div>
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/dingo_manipulator.png"
+                      alt="Image 1">
+                  </div>
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/hackathon-team.jpg"
+                      alt="Image 1">
+                  </div>
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/hackathon-team.jpg"
+                      alt="Image 1">
+                  </div>
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/dingo_manipulator.png"
+                      alt="Image 1">
+                  </div>
+                  <div class="col">
+                    <img class="img-fluid object-fit-contain"
+                      src="/assets/images/msc_projects/YY_my-title/hackathon-team.jpg"
+                      alt="Image 1">
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+            <section id="conclusions">
+              <h2>Conclusions</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur libero omnis dolore
+                voluptatem.
+                Sequi nesciunt veniam, ea laboriosam quas corporis quae nobis esse
+                doloremque in aperiam excepturi dignissimos quis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Sequi
+                repudiandae vero aliquid molestias at consequatur tempore autem
+                ullam illo provident?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit optio qui illo quo nam adipisci dolorum
+                maiores
+                molestias. Maxime hic nihil laboriosam harum, dignissimos ex minus,
+                veritatis nobis porro aspernatur laborum facere ea voluptate ipsa. Minima adipisci quo tenetur quod.
+              </p>
+            </section>
+
+            
+            
+            
+            
+            
+            <!-- DELETE THIS TOO FROM HERE -->
+            <hr>
+            <div class="d-flex justify-content-center mt-5">
+              <a href="{{ '/msc_projects_finished' | relative_url }}" class="btn btn-dark rounded-pill"><i
+                  class="bi bi-arrow-left"></i> Back to Master Thesis Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS for Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- DELETE UNTIL HERE -->
