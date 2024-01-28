@@ -20,7 +20,7 @@ You can clone the repository or just download the files.
 2. Rename the file of choice `msc_project_template_xx_version` to `YY_my-title.md` or `YY_my-title.html` respectively. Delete the file you have not used.
 
 > [!IMPORTANT] 
-> Regarding File Size: For images, make them a small size (~1MB). Keep videos light too (.mp4 with low bitrate, not too long). If you have a big video, consider uploading to youtube and embedding it. You should also have your images in standard aspect ratios such as 1x1 or 4x3, especially of they will displayed next to each other. The cove image should be 1x1 (square).
+> Regarding File Size: For images, make them a small size (~1MB). Keep videos light too (.mp4 with low bitrate, not too long). If you have a big video, consider uploading to youtube and embedding it. You should also have your images in standard aspect ratios such as 1x1 or 4x3, especially if they will be displayed next to each other. The cove image should be 1x1 (square).
 
 ## What to do before sending it to your supervisor
 
