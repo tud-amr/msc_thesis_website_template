@@ -8,7 +8,7 @@ This local version is a bit limited in terms of styling, but it should be enough
 
 2. Write it in `html`. This is a bit more complicated, but you will have more control over the styling. You can see an example of this [here](msc_project_template_html_version.html). Additionally you can render it locally without any extra work.
 
-> [!TIP] Regarding the styling (CSS)
+> **Tip:** Regarding the styling (CSS)
 > The website uses [bootstrap 5](https://getbootstrap.com/) for the styling, so you can use any of the components from there. Check the documentation as they have many examples. ChatGPT can be quite helpful too. If you require any extra special styling, add it in the same html file.
 
 ## Get started:
@@ -19,7 +19,7 @@ You can clone the repository or just download the files.
 
 2. Rename the file of choice `msc_project_template_xx_version` to `YY_my-title.md` or `YY_my-title.html` respectively. Delete the file you have not used.
 
-> [!WARNING] Regarding File Size
+> **Warning:** Regarding File Size
 > For images, make them a small size (~1MB). Keep videos light too (.mp4 with low bitrate, not too long). If you have a big video, consider uploading to youtube and embedding it. You should also have your images in standard aspect ratios such as 1x1 or 4x3, especially of they will displayed next to each other. The cove image should be 1x1 (square).
 
 ## What to do before sending it to your supervisor
